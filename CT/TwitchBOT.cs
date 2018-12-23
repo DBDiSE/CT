@@ -19,10 +19,10 @@ namespace ConsoleTwitch
 
         private BotCheck check = new BotCheck();
 
-        //private static string connStr = "server=51.254.246.195;user=root;database=Twitch;port=3306;password=wiselka1";
-        //private static string connStr = "server=188.165.26.194;user=root;database=Twitch;port=3306;password=wiselka1";
+        //private static string connStr = "server=51.254.246.000;user=root;database=Twitch;port=3306;password=0";
+        //private static string connStr = "server=188.165.26.000;user=root;database=Twitch;port=3306;password=0";
 
-        private static string connStr = "server=127.0.0.1;user=root;database=Twitch;port=3306;password=wiselka1";
+        private static string connStr = "server=127.0.0.1;user=root;database=Twitch;port=3306;password=0";
 
         public void Bot(string kanal)
         {
@@ -33,7 +33,7 @@ namespace ConsoleTwitch
             Console.WriteLine("");
             Console.WriteLine("Bot uruchamiany na kanale: " + kanal2);
 
-            ConnectionCredentials credentials = new ConnectionCredentials("pomagam_dzbanom", "oauth:qdftj9ur5lrsbm42zsjl07aeoo1plx");
+            ConnectionCredentials credentials = new ConnectionCredentials("pomagam0", "oauth:0000");
 
             client = new TwitchClient();
             client.Initialize(credentials, kanal);
